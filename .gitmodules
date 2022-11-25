@@ -1,0 +1,3 @@
+[submodule "aoc_framework"]
+	path = aoc_framework
+	url = git@github.com:appinha/aoc_framework.git
