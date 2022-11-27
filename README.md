@@ -52,7 +52,7 @@ _**Note:** to get your session cookie, open the AoC website and log in to your a
 make new d=01
 ```
 
-![Output from running `make new day=01`](aoc_framework/img/make_new.png)
+![Output from running `make new day=01`](img/make_new.png)
 
 _Note: the `make` commands have to be run from the cloned folder's root, i.e. from where the `Makefile` is placed._
 
