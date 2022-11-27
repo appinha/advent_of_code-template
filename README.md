@@ -36,7 +36,9 @@ This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It inc
 
 ### Instructions
 
-**0. Fork this repo and git clone it**
+**0. Create a new repo from this template and git clone it**
+
+![Screenshot showing how to use this template to create a new repository on GitHub](img/use_this_template.png)
 
 **1. Configure the config.ini file**
 
