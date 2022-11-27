@@ -24,7 +24,7 @@
 
 ## 🗣️ About
 
-This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It includes a [framework](https://github.com/appinha/aoc_framework) for automating repetitive tasks and a [library](https://github.com/appinha/aoc_lib) with useful tools when solving the puzzles.
+This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It includes a [framework](https://github.com/appinha/aoc_framework) for automating repetitive tasks and a [library](https://github.com/appinha/aoc_lib) with useful tools for solving the puzzles.
 
 ## 🛠️ Usage
 
@@ -46,7 +46,7 @@ To enable automated downloading of your personal input from the AoC website, on 
 
 _**Note:** to get your session cookie, open the AoC website and log in to your account; open DevTools (inspect) and go to the "Application" tab; on the left menu, under "Storage", click on "Cookies", then on the AoC url; from the table, copy the value of the "session" entry._
 
-![Screenshot of Application tab in Chrome DevTools](aoc_framework/img/session_cookie.png)
+![Screenshot of Application tab in Chrome DevTools](img/session_cookie.png)
 
 **2. Create a new day folder from template**
 
@@ -145,7 +145,7 @@ for a certain day (both parts):
 make d=02
 ```
 
-![Output from running `make day=01`](aoc_framework/img/make_day.png)
+![Output from running `make day=01`](img/make_day.png)
 
 for a certain day and part:
 
@@ -167,7 +167,7 @@ make test d=12
 make test d=12 p=1
 ```
 
-![Output from running `make test day=01`](aoc_framework/img/make_test.png)
+![Output from running `make test day=01`](img/make_test.png)
 
 ## 📑 Contents
 
