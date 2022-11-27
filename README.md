@@ -42,7 +42,7 @@ This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It inc
 
 **1. Configure the config.ini file**
 
-To enable automated downloading of your personal input from the AoC website, on the `config.ini` file, fill in the **year** of the AoC edition you will be solving and your personal **session cookie**.
+To enable automated downloading of your personal input from the AoC website, on the `my_solutions/config.ini` file, fill in the **year** of the AoC edition you will be solving and your personal **session cookie**.
 
 _**Note:** to get your session cookie, open the AoC website and log in to your account; open DevTools (inspect) and go to the "Application" tab; on the left menu, under "Storage", click on "Cookies", then on the AoC url; from the table, copy the value of the "session" entry._
 
@@ -61,18 +61,19 @@ _Note: the `make` commands have to be run from the cloned folder's root, i.e. fr
 The resulting folder structure will be:
 ```
 advent_of_code-template
-  aoc_framework
-    ...
-  aoc_lib
-    ...
-  config.ini
-  day_01
-    input_test.txt
-    input.txt
-    main.py
-    README.md
-    solutions.txt
-  ...
+  my_solutions
+    aoc_framework
+      ...
+    aoc_lib
+      ...
+    config.ini
+    day_01
+      input_test.txt
+      input.txt
+      main.py
+      README.md
+      solutions.txt
+  Makefile
 ```
 
 **3. Fill in the input files**
