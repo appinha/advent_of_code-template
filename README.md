@@ -26,6 +26,13 @@
 
 This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It includes a [framework](https://github.com/appinha/aoc_framework) for automating repetitive tasks and a [library](https://github.com/appinha/aoc_lib) with useful tools for solving the puzzles.
 
+The framework automates repetitive tasks such as:
+- creating the necessary files for solving the puzzles of a given day;
+- downloading one's personal input;
+- reading and formatting the input text;
+- running the solving code for a given day, both for one's personal input and testing inputs;
+- testing of multiple different inputs.
+
 ## 🛠️ Usage
 
 ### Requirements
