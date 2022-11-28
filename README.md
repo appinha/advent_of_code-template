@@ -36,9 +36,19 @@ This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It inc
 
 ### Instructions
 
-**0. Create a new repo from this template and git clone it**
+**0. Create a new repo from this template, git clone it and start submodules**
+
+To create a new repo from this template, click on "Use this template", then on "Create a new repository":
 
 ![Screenshot showing how to use this template to create a new repository on GitHub](img/use_this_template.png)
+
+After creating a new repository from this template, git clone it and start submodules:
+
+```shell
+$ git clone <your_cloned_repo.git>
+$ cd your_cloned_repo
+$ git submodule update --init
+```
 
 **1. Configure the config.ini file**
 
@@ -51,7 +61,7 @@ _**Note:** to get your session cookie, open the AoC website and log in to your a
 **2. Create a new day folder from template**
 
 ```shell
-make new d=01
+$ make new d=01
 ```
 
 ![Output from running `make new day=01`](img/make_new.png)
@@ -60,7 +70,7 @@ _Note: the `make` commands have to be run from the cloned folder's root, i.e. fr
 
 The resulting folder structure will be:
 ```
-advent_of_code-template
+your_cloned_repo
   my_solutions
     aoc_framework
       ...
@@ -83,7 +93,7 @@ For your **personal input**, upon creating a new day folder from template, it is
 If an error occurred while downloading your input upon creating the new day folder, you can try again with:
 
 ```shell
-make input day=01
+$ make input d=01
 ```
 
 For **testing inputs**, add them in the `input_test.txt` file in substitution of the text `INPUT` and add the expected result in substitution of the `?` character. The line `<--->` is used to separate inputs for a given puzzle part, while the line `<===>` separates inputs from each puzzle part. In the example below, there are 3 testing inputs for part 1 and 2 testing inputs for part 2:
@@ -134,16 +144,36 @@ class DayPuzzleSolver():
 
 The `self.delimiter` parameter determines how the text from the input file should be broken down. The result is then passed as the `raw_input` parameter of the solving methods. For example:
 
-- `""` (empty string) - the input text remains the same, i.e. `raw_input` will be a string containing the input text in whole.
-- `"\n"` - to be used when the input should be broken down line by line, i.e. `raw_input` will be a list of strings (lines).
-- `"\n\n"` - to be used when the input is written in blocks and should be broken down by so, i.e. `raw_input` will be a list of strings (blocks of lines).
+- `""` (empty string) - the input text remains the same, i.e. `raw_input` will be a string containing the input text in whole, for example, [AoC 2015 day 1](https://adventofcode.com/2015/day/1):
+```
+(((())))()((((((((())()
+```
+
+- `"\n"` - to be used when the input should be broken down line by line, i.e. `raw_input` will be a list of strings (lines), for example, [AoC 2015 day 2](https://adventofcode.com/2015/day/2):
+```
+20x3x11
+15x27x5
+6x29x7
+```
+
+- `"\n\n"` - to be used when the input is written in blocks and should be broken down by so, i.e. `raw_input` will be a list of strings (blocks of lines), for example, [AoC 2020 day 4](https://adventofcode.com/2020/day/4):
+```
+cid:83 pid:524032739 iyr:2013 ecl:amb byr:1974
+hgt:191cm hcl:#ceb3a1 eyr:2028
+
+ecl:gry hcl:eefed5 pid:88405792 hgt:183cm cid:221 byr:1963 eyr:2029
+
+pid:777881168 ecl:grn
+hgt:181cm byr:1923 eyr:2021 iyr:2018 hcl:#18171d
+
+```
 
 **5. Run the puzzle solver**
 
 for a certain day (both parts):
 
 ```shell
-make d=02
+$ make d=02
 ```
 
 ![Output from running `make day=01`](img/make_day.png)
@@ -151,21 +181,21 @@ make d=02
 for a certain day and part:
 
 ```shell
-make d=04 p=1
+$ make d=04 p=1
 ```
 
 ```shell
-make d=08 p=2
+$ make d=08 p=2
 ```
 
 for testing input:
 
 ```shell
-make test d=12
+$ make test d=12
 ```
 
 ```shell
-make test d=12 p=1
+$ make test d=12 p=1
 ```
 
 ![Output from running `make test day=01`](img/make_test.png)
