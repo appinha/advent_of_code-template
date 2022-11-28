@@ -36,7 +36,14 @@ This template was developed for solving 🌟 Advent of Code 🎄 puzzles. It inc
 
 ### Instructions
 
-**0. Create a new repo from this template, git clone it and start submodules**
+0. [Create a new repo from this template, git clone it and start submodules](#0-create-a-new-repo-from-this-template-git-clone-it-and-start-submodules)
+1. [Configure the config.ini file](#1-configure-the-configini-file)
+2. [Create a new day folder from template](#2-create-a-new-day-folder-from-template)
+3. [Fill in the input files](#3-fill-in-the-input-files)
+4. [Write the solving code in the `main.py` file](#4-write-the-solving-code-in-the-mainpy-file)
+5. [Run the puzzle solver](#5-run-the-puzzle-solver)
+
+#### 0. Create a new repo from this template, git clone it and start submodules
 
 To create a new repo from this template, click on "Use this template", then on "Create a new repository":
 
@@ -50,7 +57,7 @@ $ cd your_cloned_repo
 $ git submodule update --init
 ```
 
-**1. Configure the config.ini file**
+#### 1. Configure the config.ini file
 
 To enable automated downloading of your personal input from the AoC website, on the `my_solutions/config.ini` file, fill in the **year** of the AoC edition you will be solving and your personal **session cookie**.
 
@@ -58,7 +65,7 @@ _**Note:** to get your session cookie, open the AoC website and log in to your a
 
 ![Screenshot of Application tab in Chrome DevTools](img/session_cookie.png)
 
-**2. Create a new day folder from template**
+#### 2. Create a new day folder from template
 
 ```shell
 $ make new d=01
@@ -86,7 +93,7 @@ your_cloned_repo
   Makefile
 ```
 
-**3. Fill in the input files**
+#### 3. Fill in the input files
 
 For your **personal input**, upon creating a new day folder from template, it is automatically downloaded from the AoC website and pasted into the `input.txt` file.
 
@@ -126,7 +133,7 @@ For **testing inputs**, add them in the `input_test.txt` file in substitution of
 
 _(test inputs for AoC 2015 day 02 puzzle)_
 
-**4. Write the solving code in the `main.py` file**
+#### 4. Write the solving code in the `main.py` file
 
 The solving code for each part of the puzzle have to be written as the methods `solve_part_1` and `solve_part_2` of the `DayPuzzleSolver` class:
 
@@ -168,7 +175,7 @@ hgt:181cm byr:1923 eyr:2021 iyr:2018 hcl:#18171d
 
 ```
 
-**5. Run the puzzle solver**
+#### 5. Run the puzzle solver
 
 for a certain day (both parts):
 
